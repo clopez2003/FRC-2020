@@ -1,4 +1,4 @@
-package frc.input;
+package src.main.java.frc.input;
 
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
@@ -29,5 +29,9 @@ public class XBoxInput extends InputMethod {
     if(Math.abs(forward) < JOYSTICK_DEAD_ZONE)
       return 0;
     return forward;
+  }
+  @Override
+  public boolean SHOULD_INTAKE() {
+    return controller.getAButton();
   }
 }

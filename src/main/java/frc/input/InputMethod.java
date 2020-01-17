@@ -1,4 +1,4 @@
-package frc.input;
+package src.main.java.frc.input;
 
 /**
  * Operator controls for the robot
@@ -11,4 +11,5 @@ public abstract class InputMethod {
   public double rightSidePower() {
     return 0;
   }
+  public boolean SHOULD_INTAKE;
 }
